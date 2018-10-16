@@ -9,7 +9,6 @@ var userLosses = document.getElementById("user-losses");
 var userLeft = document.getElementById("user-left");
 var yourGuess = document.getElementById("your-guess");
 var winsText = document.getElementById("wins-text");
-var lossesText = document.getElementById("losses-text");
 
 
 document.onkeyup = function(event) {
@@ -25,12 +24,14 @@ document.onkeyup = function(event) {
             left --;
             userLosses.textContent = losses;
             userLeft.textContent = left;
-            if (left < 1) {
+            if (left <= 0) {
+                alert("Oh no, you've tried it all the chances!")
                 wins = 0;
                 losses = 0;
                 left = 10;
             }
             yourGuess.textContent = userGuess;
+          
         } 
         
 }
