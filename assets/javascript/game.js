@@ -24,13 +24,13 @@ document.onkeyup = function(event) {
             left --;
             userLosses.textContent = losses;
             userLeft.textContent = left;
-            if (left <= 0) {
-                alert("Oh no, you've tried it all the chances!")
-                wins = 0;
-                losses = 0;
-                left = 10;
-            }
-            yourGuess.textContent = userGuess;
+        if (left <= 0) {
+            alert("Oh no, you've tried it all the chances!")
+            wins = 0;
+            losses = 0;
+            left = 10;
+        }
+        yourGuess.textContent = userGuess;
           
         } 
         
