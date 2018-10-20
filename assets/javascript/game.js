@@ -25,7 +25,7 @@ document.onkeyup = function(event) {
             userLosses.textContent = losses;
             userLeft.textContent = left;
         if (left <= 0) {
-            alert("Oh no, you've tried it all the chances!")
+            alert("Oh no, you've tried all the chances!")
             wins = 0;
             losses = 0;
             left = 10;
